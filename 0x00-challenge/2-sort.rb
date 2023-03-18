@@ -21,7 +21,8 @@ ARGV.each do |arg|
       next
     end
     while !is_inserted && i <= l do
-        if result[i] > i_arg
+      if result[i] > i_arg
+        is_inserted = false
             i += 1
         else
             result.insert(i, i_arg)
