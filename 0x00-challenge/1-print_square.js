@@ -14,10 +14,11 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-let size = Number.parseInt(process.argv[2])
+let size = Number.parseInt(process.argv[2], 16)
 
 if(!size)
 {
+    process.stderr.write("Usage: ./1-print_square.js <integer>\n");
     process.exit(1);
 }
 
