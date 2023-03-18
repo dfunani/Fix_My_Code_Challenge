@@ -9,12 +9,12 @@
 
 if (process.argv.length <= 2) {
     process.stderr.write("Missing argument\n");
-    process.stderr.write("Usage: ./1-print_square.js <size>\n");
-    process.stderr.write("Example: ./1-print_square.js 8\n");
+    process.stderr.write("Usage: node ./1-print_square.js <size>\n");
+    process.stderr.write("Example: node ./1-print_square.js 8\n");
     process.exit(1)
 }
 
-let size = Number.parseInt(process.argv[2], 16)
+let size = Number.parseInt(process.argv[2], 10)
 
 if(!size)
 {
