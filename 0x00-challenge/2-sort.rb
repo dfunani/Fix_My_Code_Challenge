@@ -20,7 +20,7 @@ ARGV.each do |arg|
       result.insert(0, i_arg)
       next
     end
-    while !is_inserted && i < l do
+    while !is_inserted && i <= l do
         if result[i] > i_arg
             i += 1
         else
