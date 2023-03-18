@@ -14,13 +14,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-let size = Number.parseInt(process.argv[2], 10)
-
-if(!size)
-{
-    process.stderr.write("Usage: node ./1-print_square.js <integer>\n");
-    process.exit(1);
-}
+let size = Number.parseInt(process.argv[2])
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
