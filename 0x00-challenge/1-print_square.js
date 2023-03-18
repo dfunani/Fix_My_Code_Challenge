@@ -14,7 +14,10 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-let size = Number.parseInt(process.argv[2])
+let size = parseInt(process.argv[2])
+
+if(!size)
+    return
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
